@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" type="text/css" href="global.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <div>
+        <header class="header">
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/Moxieslogo.png" alt="Wesbite logo"/>
+            </a>
+        </div>
+         <nav class="navbar">
+             <ul>
+                 <li><a href="#">Menu</a></li>
+                 <li><a href="#">Explore</a>
+                     <ul class="dropdwon">
+                         <li><a href="specials.html">Specials</a></li>
+                         <li><a href="#">Contest</a></li>
+                         <li><a href="#">Locations</a></li>
+                         <li><a href="#">Careers</a></li>
+                         <li><a href="#">Gift Card</a></li>
+                     </ul>
+                 </li>
+                 <li><a href="#">About Us</a></li>
+                 <li><a href="#">Contact</a></li>
+             </ul>
+         </nav>
+        </header>
+     </div>
+
+    <div class="body">
+            <div class="space">
+                <div class="contact">
+                    <div class="contact___bannerdisplay" id="contact__banner">
+                        <div>
+                            <img id="contactimg1" src="images/ladyeating.jpg" alt="lady eating">
+                        </div>
+                        <div>
+                            <img id="contactimg2"  src="images/dinerbar.jpg" alt="bar diner">
+                        </div>
+                        <div>
+                            <img id="contactimg3"  src="images/ladyordering.jpg" alt="lady ordering">
+                        </div>
+                        <div>
+                            <img id="contactimg4"  src="images/kitchenchef.jpg" alt="chef in the kitchen">
+                        </div>
+                    </div>
+                <!--These above images will rotate like a slideshow in JS-->
+                </div>
+
+             </div>
+            <div class="contact__us">
+                <div class="contact__title">
+                    <h2>Contact Us</h2>
+                </div>
+                <p>If you have any questions about our operations or require assistance, you can get in touch with the specific department that will be able to help you out.</p>
+                <br>
+                <p class="notice">PLEASE NOTE: Due to the ongoing global crisis, our restaurants are operating on strict reduced hours.</p>
+            </div>
+
+            <div class="contact__form">
+                <div class="contact__form__title">
+                    <h2>Contact</h2>
+                </div>
+                <form class="contact__contactform" action="" name="contactForm">
+                    <div class="form__section">
+                        <label for="department">Department</label>
+                        <select id="department" name="department">
+                            <option value="FOH">Front of house</option>
+                            <option value="BOH">Back of house</option>
+                            <option value="Media">Media Inquiries</option>
+                        </select>
+                    </div>
+                    <div class="form__section">
+                        <label for="fname">First Name</label>
+                        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                     </div>
+                    
+                    <div class="form__section">
+                        <label for="lname">Last Name</label>
+                        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                    </div>
+                    <div class="form__section">
+                        <label for="subject">Message</label>
+                        <textarea id="subject" name="subject" placeholder="How can we help ?.."></textarea>
+                    </div>
+                    
+                    <div class="form__button">
+                        <button type="submit" return="false" value="Submit">Submit</button>
+                    </div>
+
+                </form>
+                <!--Form and Directory will switch upon clicking-->
+                <div class="message_confirmed">
+                    <span id="thankyou"></span>
+                </div>
+                
+                <div class="locations">
+                    <div class="contact__directory__title">
+                        <h3>Restaurant Directory</h3>
+                    </div>
+                    <div class="contact__directory">
+                        <div class="contact__restuarant">
+                            <div class="restaurant__location">
+                                <h4>Sandman Signature Toronto Airport Hotel</h4>
+                                <p>55 Reading Ct, Etobicoke, ON M9W 7K7</p>
+                                <p>416-444-7711</p>
+                            </div>
+                        </div>
+                        <div class="contact__restuarant">
+                            <!--Location 2-->
+                            <div class="restaurant__location">
+                                <h4>Bramalea City Centre</h4>
+                                <p>56 Peel Centre Dr, Brampton, ON L6T 0E2</p>
+                                <p>416-444-7777</p>
+                            </div>
+                        </div>
+                        <div class="contact__restuarant">
+                            <!--Location 3-->
+                            <div class="restaurant__location">
+                                <h4>Square One Shopping Centre</h4>
+                                <p>100 City Centre Dr #730, Mississauga, ON L5B 2C9</p>
+                                <p>416-444-7700</p>
+                                
+                            </div>
+                        </div>
+                        
+                    </div>
+            </div>
+            </div>
+            <div class="contact__message">
+                <p >It is our goal to delight you every time you dine with us. If you had a good experience, we want to hear about it! If you were disappointed, we want to hear about that, too! Your feedback is important to us and helps us understand how to better serve you in the future.</p>
+            </div>
+        
+</div>
+</div>
+<div class="footerpos">
+    <footer>
+       <div class="pright">
+           
+               <i class="fab fa-facebook-f"></i>
+               <i class="fab fa-instagram"></i>
+               <i class="fab fa-twitter"></i>
+               <i class="fab fa-pinterest-p"></i>
+        
+       </div>
+       <div class="pleft">
+           <p>&copy; Moxie's Kitchen, since 2016.</p>
+       </div>
+    </footer>
+   </div>
+    <script src="contact.js"></script>
+</body>
+
+</html>

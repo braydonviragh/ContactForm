@@ -1,0 +1,202 @@
+@import url("https://fonts.googleapis.com/css2?family=Hind&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+.backimg {
+  background-image: url(images/q-u-i-Zrp9b3PMIy8-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.backcolor {
+  background-color: #000;
+}
+
+.header {
+  background-image: url(images/emerson-vieira-_aR4l6fj6wQ-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 200px;
+}
+
+.header p {
+  font-family: "Hind";
+}
+
+.logo {
+  width: 50px;
+  height: 20px;
+}
+
+.logo img {
+  width: 300px;
+  height: 100px;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.logo img a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.navbar {
+  font-family: "Hind";
+  font-size: 18px;
+  float: right;
+  margin-top: 100px;
+  margin-right: 20px;
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+.navbar ul li {
+  background: #000;
+  display: block;
+  float: left;
+  padding: 1.2rem;
+  position: relative;
+  text-decoration: none;
+  transition-duration: 0.5s;
+}
+
+.navbar ul li:hover {
+  background: #fc8c03;
+  cursor: pointer;
+}
+
+.navbar ul li ul {
+  visibility: hidden;
+  opacity: 0;
+  min-width: 5rem;
+  position: absolute;
+  transition: all 0.5s ease;
+  margin-top: 1rem;
+  left: 0;
+  display: none;
+}
+
+.navbar ul li:hover > ul,
+.navbar ul li ul:hover {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+
+.navbar ul li ul li {
+  clear: both;
+  width: 100%;
+}
+
+.navbar ul li ul li:hover {
+  background: #fc8c03;
+  border-radius: 12px;
+}
+.sec1 {
+  margin-top: -4.2em;
+}
+
+.sec1 h1 {
+  color: #fff;
+  font-family: "Oswald";
+  font-size: 80px;
+  font-weight: bolder;
+  margin-bottom: -20px;
+  text-align: justify;
+  padding-left: 15px;
+}
+
+.sec1 p {
+  color: #fff;
+  font-family: "Hind";
+  font-size: 30px;
+  font-weight: 500;
+  text-align: justify;
+  padding: 20px;
+}
+
+@keyframes slidy {
+  0% {
+    left: 0%;
+  }
+  20% {
+    left: 0%;
+  }
+  25% {
+    left: -100%;
+  }
+  45% {
+    left: -100%;
+  }
+  50% {
+    left: -200%;
+  }
+  70% {
+    left: -200%;
+  }
+  75% {
+    left: -300%;
+  }
+  95% {
+    left: -300%;
+  }
+  100% {
+    left: -400%;
+  }
+}
+
+.slider {
+  overflow: hidden;
+}
+
+.slider figure img {
+  width: 20%;
+  float: left;
+}
+
+.slider figure {
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  text-align: left;
+  font-size: 0;
+  animation: 30s slidy infinite;
+}
+
+.footerpos {
+  background-color: #000;
+  margin-bottom: -0.9em;
+}
+footer {
+  display: block;
+}
+
+footer p {
+  color: #fff;
+  font-size: 14px;
+  font-family: "Hind";
+  text-align: center;
+}
+footer i {
+  color: #fff;
+  font-size: 25px;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  padding-right: 20px;
+}
